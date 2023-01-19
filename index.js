@@ -14,6 +14,8 @@ app.use('/contacts', contacts)
 app.use('/vehicles', vehicles)
 app.use('/products', products)
 
+app.use(express.static('public'))
+
 /* App listening test*/
 app.listen(port, () => {
     console.log(`Web server is listening on port ${port}!`);
